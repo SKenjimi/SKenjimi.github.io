@@ -1,5 +1,10 @@
 # container
 ## Jenkins
+
+Act/Stb構成の
+
+
+
 マスター/スレーブ構成のJenkinsをローカル環境にdocker-composeで構築する
 
 [docker-composeでのJenkins構築](https://qiita.com/KWS_0901/items/34d09b472bea9f5227a7)
