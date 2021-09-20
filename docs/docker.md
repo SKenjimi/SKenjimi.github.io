@@ -1,3 +1,5 @@
+{:.font-body}
+
 # container
 ## Jenkins
 
