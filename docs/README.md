@@ -1,10 +1,10 @@
 # SKenjimiのためのサイト
 
-## Profile
+## 1. Profile
 
-## Sports
+## 2. Sports
 
-## Learned
+## 3. Learned
 [docker](md/docker.md)
 
 [GCP](md/gcp.md)
@@ -15,9 +15,9 @@
 
 [Readable code](md/readablecode.md)
 
-## Wanna Learn
+## 4. Wanna Learn
 [NGC](md/ngc.md)
 
-## References
+## 5. References
 
-## PoC
+## 6. PoC
