@@ -1,6 +1,3 @@
----
-sort: 1
----
 # docker container
 ## Jenkins
 マスター/スレーブ構成のJenkinsをローカル環境にdocker-composeで構築する
