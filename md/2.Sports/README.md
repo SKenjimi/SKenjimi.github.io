@@ -1,3 +1,0 @@
-# Sports
-
-source: `{{ page.path }}`

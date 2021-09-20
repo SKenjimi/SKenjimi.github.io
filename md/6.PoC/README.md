@@ -1,3 +1,0 @@
-# PoC
-
-source: `{{ page.path }}`

@@ -1,3 +1,0 @@
-# Learned
-
-source: `{{ page.path }}`
