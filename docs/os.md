@@ -1,22 +1,25 @@
+---
+sort: 3
+---
 # Ubuntu
 ## System locate
-$B%m%1!<%k%Q%C%1!<%8$N%$%s%9%H!<%k(B
+ロケールパッケージのインストール
 
 `$ apt -y install language-pack-ja-base language-pack-ja`
 
-$B%m%1!<%k@_Dj$N0lMwI=<((B
+ロケール設定の一覧表示
 
 `$ localectl list-locales`
 
-$B%m%1!<%k$N@_Dj3NG'(B
+ロケールの設定確認
 
 `$ localectl`
 
-$B%m%1!<%k$N@_DjJQ99(B
+ロケールの設定変更
 
 `$ localectl set-locale LANG=ja_JP.UTF-8 LANGUAGE="ja_JP:ja"`
 
-$B%m%1!<%k$N@_Dj3NG'(B
+ロケールの設定確認
 
 `$ localectl`
 
