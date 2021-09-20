@@ -1,5 +1,23 @@
-# SKenjimi index.md
-index.md
+# SKenjimiのためのサイト
 
-using remote theme
-[index.htmlページ](index.html)
+## Profile
+
+## Sports
+
+## Learned
+[docker](md/dokcer.md)
+
+[GCP](md/gcp.md)
+
+[OS](md/os.md)
+
+[PM knowledgebase](md/pmknowledgebase.md)
+
+[Readable code](md/readablecode.md)
+
+## Wanna Learn
+[NGC](md/ngc.md)
+
+## References
+
+## PoC
