@@ -20,6 +20,9 @@ text: |
 
 {:.font-body}
 {{ page.text }}
+一二三
+テスト
+
 
 `{:.font-head}`
 

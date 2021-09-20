@@ -1,3 +1,13 @@
+---
+sort: 1
+text: |
+  ABCDEFGHIJKLMNOPQRSTUVWXYZ
+  abcdefghijklmnopqrstuvwxyz
+  1234567890
+  一二三四五六七八九十百千萬上中下左右大小春夏秋冬東南西北金木水火土
+---
+
+
 {:.font-body}
 
 # container
