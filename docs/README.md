@@ -1,15 +1,14 @@
 # SKenjimiのためのサイト
-
+SKenjimiがSKenjimiに向けて作成したサイト
 
 ## 1. Profile
 SKenjimiの簡易プロフィール
 
-## 2. Sports
-趣味のスポーツ観戦やスポーツに関する情報
+## 2. Life and Hobby
+趣味(スポーツなど）に関する情報
 
 ## 3. Learned
-学んだこと/学んだことの備忘録
-### 3-1. [docker](md/docker.md)
+学んだこと/その備忘録/閲覧済みページ
 
 ## 4. Wanna Learn
 これから学びたいこと
@@ -17,3 +16,5 @@ SKenjimiの簡易プロフィール
 ## 5. References
 
 ## 6. PoC
+検証環境
+
