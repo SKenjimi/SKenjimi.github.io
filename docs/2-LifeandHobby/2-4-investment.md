@@ -20,3 +20,4 @@
 ## 参考
 * [つみたてNISAと個別株投資](https://reserving-fund.net/2019/11/13/stock_investment/)
 * [現行NISAと新NISA(2024年頃)](https://www.daiwa.jp/sodatte/lesson/s0274/)
+* [野村スリーゼロ先進国株式投信 純資産](https://www.nomura-am.co.jp/fund/funddetail.php?fundcd=140773)
