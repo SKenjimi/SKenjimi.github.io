@@ -16,3 +16,6 @@
 
 ### NISA口座
 [つみたてNISAの口座検討](https://gentosha-go.com/articles/-/37943)
+
+## 参考
+* [つみたてNISAと個別株投資](https://reserving-fund.net/2019/11/13/stock_investment/)
