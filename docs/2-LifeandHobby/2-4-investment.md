@@ -1,2 +1,15 @@
 # 2-4 Investment trust
-## 
+## 投資信託と株式投資
+[「投資信託」と「株式投資」の違い](https://www.smbc.co.jp/kojin/special/moneyguide/asset-management/column/009/)
+
+## 投資信託
+[「NISA」と「確定拠出年金」の違い](https://zuuonline.com/archives/229403)
+
+### NISA
+* 一般NISA
+* つみたてNISA
+* ジュニアNISA
+
+### 確定拠出年金：老後の資産づくりを目的とした制度
+* 企業型DC
+* iDeCo：企業型DC同様、60歳になるまでは原則として拠出した資金および、運用益の引き出しができない。
