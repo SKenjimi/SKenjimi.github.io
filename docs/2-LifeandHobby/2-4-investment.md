@@ -19,3 +19,4 @@
 
 ## 参考
 * [つみたてNISAと個別株投資](https://reserving-fund.net/2019/11/13/stock_investment/)
+* [現行NISAと新NISA(2024年頃)](https://www.daiwa.jp/sodatte/lesson/s0274/)
