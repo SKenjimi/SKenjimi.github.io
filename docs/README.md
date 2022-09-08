@@ -19,3 +19,5 @@ SKenjimiの簡易プロフィール
 ## 6. PoC
 検証環境
 
+## 7. Mac
+Mac Book
