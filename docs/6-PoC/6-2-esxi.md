@@ -32,7 +32,7 @@ DNSの設定
 #### docker-ceのインストール
 1. 関連パッケージのインストール  
 `$ sudo apt update`  
-`$ sudo apt-get install apt-transport-https ca-certificates curl gnupg lsb-releas`
+`$ sudo apt-get install apt-transport-https ca-certificates curl gnupg lsb-release`
 1. Dockerの公式GPGキーを追加  
 `$ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg`
 1. リポジトリの追加  
