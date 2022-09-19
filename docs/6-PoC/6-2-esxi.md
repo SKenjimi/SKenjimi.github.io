@@ -13,6 +13,9 @@
 ※[ESXi上の仮想マシンのクローンの作成](https://ameblo.jp/shinnaka54/entry-12642395278.html)
 
 ## 仮想マシン
+1. Ubuntu
+* パッケージファイルは常にアップデートし、最新版とする（ただし、アップグレード時にスナップショットを取得し一定期間保持すること）
+
 ### 共通設定　（Ubuntu20.04）
 * /ete/hostname  
 ホスト名の修正
@@ -22,6 +25,7 @@
 IPアドレス、デフォルトゲートウェイの設定
 * /etc/systemd/resolved.conf  
 DNSの設定
+* /etc/sudoers
 
 ### 個別設定
 * 
