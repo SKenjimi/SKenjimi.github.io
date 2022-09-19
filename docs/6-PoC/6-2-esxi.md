@@ -46,7 +46,7 @@ DNSの設定
 `$ sudo apt info docker-ce`
 1. 最新版のdocker-ceのインストール  
 `$ sudo apt-get install docker-ce docker-ce-cli containerd.io docker-compose-plugin`
-1. dockerユーザーを自グループに追加
+1. dockerユーザーを自グループに追加  
 `$ sudo usermod -aG docker <your-user>`
 1. 再ログインし、バージョンを確認  
 `$ sudo docker version`
