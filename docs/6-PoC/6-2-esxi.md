@@ -18,17 +18,25 @@
 （ただし、アップグレード時にスナップショットを取得し一定期間保持すること）
 
 ### 共通設定　（Ubuntu22.04）
-* /ete/hostname  
-ホスト名の修正
-* /etc/hosts  
+* ホスト名の修正  
+file: /ete/hostname
+* hostsファイルのホスト名修正  
+file: /etc/hosts
+* IPアドレス、デフォルトゲートウェイの設定  
+/etc/netplan/***.yaml
+* DNSの設定  
+/etc/systemd/resolved.conf
 自ホストのホスト名修正
-* /etc/netplan/***.yaml  
-IPアドレス、デフォルトゲートウェイの設定
-* /etc/systemd/resolved.conf  
-DNSの設定
-* /etc/sudoers
+* sudoers設定  
+/etc/sudoers
 
 ### 個別設定 (Ubuntu22.04)
+#### Gitの初期セットアップ
+1. Gitの利用ユーザー名の指定  
+`$ git config --global user.name <YOUR NAME>`
+1. Gitの利用メールアドレスの指定  
+`$ git config --global user.email <YOUR EMAIL>`
+
 #### docker-ceのインストール
 1. 関連パッケージのインストール  
 `$ sudo apt update`  
@@ -52,3 +60,5 @@ DNSの設定
 `$ sudo docker version`
 
 ※引用元：[Ubuntu 22.04への最新版dockerのインストール](https://self-development.info/ubuntu-22-04-lts%E3%81%B8%E3%81%AE%E6%9C%80%E6%96%B0%E7%89%88docker%E3%81%AE%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB/)
+
+#### docker-compose のインストール
