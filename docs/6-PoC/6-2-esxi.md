@@ -63,10 +63,11 @@ file: /etc/hosts
 
 #### docker-compose のインストール
 1. docker-composeのインストール  
-`$ sudo curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose`
+`$ sudo curl -L https://github.com/docker/compose/releases/download/v2.11.0/docker-compose-linux-x86_64 -o /usr/local/bin/docker-compose`
 1. 実行権限の付与  
 `$ sudo chmod +x /usr/local/bin/docker-compose`
 1. バージョンの確認  
-`$ **docker-compose --version`
+`$ docker-compose --version`
 
-※引用元：[](https://server-network-note.net/2022/07/docker-ubuntu2204-install/)
+※引用元：[Docker Composeのインストール](https://server-network-note.net/2022/07/docker-ubuntu2204-install/)  
+※インストール元；[Release](https://github.com/docker/compose/releases)
