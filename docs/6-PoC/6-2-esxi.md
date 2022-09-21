@@ -62,3 +62,11 @@ file: /etc/hosts
 ※引用元：[Ubuntu 22.04への最新版dockerのインストール](https://self-development.info/ubuntu-22-04-lts%E3%81%B8%E3%81%AE%E6%9C%80%E6%96%B0%E7%89%88docker%E3%81%AE%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB/)
 
 #### docker-compose のインストール
+1. docker-composeのインストール  
+`$ sudo curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose`
+1. 実行権限の付与  
+`$ sudo chmod +x /usr/local/bin/docker-compose`
+1. バージョンの確認  
+`$ **docker-compose --version`
+
+※引用元：[](https://server-network-note.net/2022/07/docker-ubuntu2204-install/)
