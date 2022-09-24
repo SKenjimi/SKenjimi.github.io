@@ -1,4 +1,4 @@
-# 3-3. Operating Systen --Learned
+# 3-3. Linux --Learned
 ## 共通設定
 * ホスト名の修正  
 file: /etc/hostname
