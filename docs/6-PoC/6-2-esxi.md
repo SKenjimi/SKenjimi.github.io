@@ -31,17 +31,7 @@ vimの置換オプション： :%s/\<original vm name\>/\<new vm name\>/g
 
 ## 設定
 ### 共通設定　（Ubuntu22.04）
-* ホスト名の修正  
-file: /etc/hostname
-* hostsファイルのホスト名修正  
-file: /etc/hosts
-* IPアドレス、デフォルトゲートウェイの設定  
-/etc/netplan/***.yaml
-* DNSの設定  
-/etc/systemd/resolved.conf
-自ホストのホスト名修正
-* sudoers設定  
-/etc/sudoers
+[OSの基本設定](../3-Learned/3-3-os.md)
 
 ### 個別設定 (dev-docker Ubuntu22.04)
 #### Gitの初期セットアップ
