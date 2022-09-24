@@ -6,9 +6,21 @@
 モード変更
 
 ### vCenterなしでの仮想マシンのクローン作成
-1. 「データストア ブラウザ」を開く
-1. 新規仮想マシンのホスト名で新しいフォルダを作成する
-1. 元となる仮想マシンのnvram, vmdk, vmx, vmsdファイルをコピーする
+1. ESXiホストのSSHを有効化し、CLIでアクセスする
+1. 新規仮想マシンのホスト名で新しいフォルダを作成する  
+`# cd /vmfs/volumes/datastore1 `  
+`# mkdir <new vm name>`
+1. 元となる仮想マシンのvmdk, vmxファイルをコピーする  
+`# vmkfstools -i <original vm name>/<original vm name>.vmdk <new vm name>/<new vm name>.vmdk -d thin`  
+`# cp -p <original vm name>/<original vm name>.vmx <new vm name>/<new vm name>.vmx`
+1. vimを使って仮想マシンの構成情報を修正する  
+vimの置換オプション： :%s/\<original vm name\>/\<new vm name\>/g  
+`# vi <new vm name>/<new vm name>.vmx`
+1. Web UIの「データストア　ブラウザ」にてコピーを確認する
+1. 「仮想マシンの登録」を押下し、コピーした仮想マシンの登録を行う
+1. 仮想マシンを起動し、起動時に質問が聞かれるので「コピーした」と回答する
+1. ホスト名設定とIP設定が元の仮想マシンのままなので、取り扱いに気をつける
+
 
 ※引用元：[ESXi上の仮想マシンのクローンの作成](https://ameblo.jp/shinnaka54/entry-12642395278.html)
 
@@ -19,7 +31,7 @@
 
 ### 共通設定　（Ubuntu22.04）
 * ホスト名の修正  
-file: /ete/hostname
+file: /etc/hostname
 * hostsファイルのホスト名修正  
 file: /etc/hosts
 * IPアドレス、デフォルトゲートウェイの設定  
