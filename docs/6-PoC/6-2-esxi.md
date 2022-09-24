@@ -43,3 +43,10 @@ vimの置換オプション： :%s/\<original vm name\>/\<new vm name\>/g
 #### Docker環境の構築
 * [Dockerホストの環境構築](../3-Learned/3-1-docker/3-1-1-docker-host.md)
 * dockerのデータファイル格納先： \/docker-image
+
+#### Dockerイメージ用のLVM
+* 物理ボリューム： \/dev\/sdb
+* ボリュームグループ： docker-image-vg
+* 論理ボリューム: lv-docker-image
+### fstabの設定
+* /etc/fstabに/docker-image用のマウント設定の追加
