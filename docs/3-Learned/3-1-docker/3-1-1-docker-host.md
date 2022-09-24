@@ -40,10 +40,9 @@
 1. dockerサービスと停止する  
 `$ systemctl stop docker`
 1. /etc/docker/daemon.jsonファイルがない場合は新規作成し、JSON形式で以下を追記する  
-` {  
-    data-root: "<directory>"  
-  }  
-`  
+`{  
+    data-root: "/some/path"  
+  }`  
 1. dockerサービスを再起動する  
 `$ systemctl start docker`
 
