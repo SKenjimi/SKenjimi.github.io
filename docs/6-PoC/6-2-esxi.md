@@ -48,5 +48,5 @@ vimの置換オプション： :%s/\<original vm name\>/\<new vm name\>/g
 * 物理ボリューム： \/dev\/sdb
 * ボリュームグループ： docker-image-vg
 * 論理ボリューム: lv-docker-image
-### fstabの設定
+#### fstabの設定
 * /etc/fstabに/docker-image用のマウント設定の追加
