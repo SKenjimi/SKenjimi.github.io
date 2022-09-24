@@ -25,10 +25,11 @@ vimの置換オプション： :%s/\<original vm name\>/\<new vm name\>/g
 ※引用元：[ESXi上の仮想マシンのクローンの作成](https://ameblo.jp/shinnaka54/entry-12642395278.html)
 
 ## 仮想マシンの管理ルール
-1. Ubuntu
+### Ubuntu 22.04 LTS
 * パッケージファイルは常にアップデートし、最新版とする  
 （ただし、アップグレード時にスナップショットを取得し一定期間保持すること）
 
+## 設定
 ### 共通設定　（Ubuntu22.04）
 * ホスト名の修正  
 file: /etc/hostname
