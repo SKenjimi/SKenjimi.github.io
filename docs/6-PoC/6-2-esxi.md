@@ -31,7 +31,7 @@ vimの置換オプション： :%s/\<original vm name\>/\<new vm name\>/g
 
 ## 設定
 ### 共通設定　（Ubuntu22.04）
-[OSの基本設定](../3-Learned/3-3-os.md)
+[OSの基本設定](../3-Learned/3-3-linux.md)
 
 ### 個別設定 (dev-docker Ubuntu22.04)
 #### Gitの初期セットアップ
