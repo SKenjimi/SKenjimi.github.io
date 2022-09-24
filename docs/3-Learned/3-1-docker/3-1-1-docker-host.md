@@ -1,5 +1,5 @@
 # 3-1-1. Docker Host
-## 環境構築、インストール
+## インストール
 ### docker-ce
 1. 関連パッケージのインストール  
 `$ sudo apt update`  
@@ -34,3 +34,18 @@
 
 ※引用元：[Docker Composeのインストール](https://server-network-note.net/2022/07/docker-ubuntu2204-install/)  
 ※インストール元；[Release](https://github.com/docker/compose/releases)
+
+## セットアップ
+### Dockerのdaemon, image, state等の格納先の変更
+1. dockerサービスと停止する  
+`$ systemctl stop docker`
+1. /etc/docker/daemon.jsonファイルがない場合は新規作成し、JSON形式で以下を追記する  
+` {  
+    data-root: "<directory>"  
+  }  
+`  
+1. dockerサービスを再起動する  
+`$ systemctl start docker`
+
+※引用元：[Custom Docker daemon options](https://docs.docker.com/config/daemon/systemd/#custom-docker-daemon-options)  
+※引用元：[Daemon Configuration File](https://docs.docker.com/engine/reference/commandline/dockerd)
