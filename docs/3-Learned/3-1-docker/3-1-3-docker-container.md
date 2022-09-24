@@ -69,7 +69,7 @@
 ## Taiga
 ### インストール
 1. リポジトリのclone  
-`$ git clone https://github.com/kaleidos-ventures/taiga-docker.git`
+`$ git clone https://github.com/kaleidos-ventures/taiga-docker.git`  
 `$ cd taiga-docker`
 1. アプリを起動する
 `$ ./launch-all.sh`
