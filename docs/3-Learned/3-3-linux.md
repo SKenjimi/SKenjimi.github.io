@@ -43,11 +43,11 @@ file: /etc/hosts
 `$ mkfs.ext4 /dev/<vg name>/<lv name>`  
 `$ mount /dev/<vg name>/<lv name> <mount point>`
 1. 物理ボリュームを表示し確認する  
-`$ pvdisplay `
+`$ pvdisplay /dev/sdX`
 1. ボリュームグループを表示し確認する  
-`$ vgdisplay `
+`$ vgdisplay <vg name>`
 1. 論理ボリュームを表示し確認する  
-`$ lvdisplay `
+`$ lvdisplay /dev/<vg name>/<lv name>`
 
 ### ディスクを起動時にマウントする方法
 1. 対象のディスクデバイスを確認する  
@@ -61,5 +61,10 @@ file: /etc/hosts
 `$ shutdown -h now`  
 `$ cat /etc/mtab`
 
-### LVMで構成された領域を拡張する方法
-`$ vgextent?`
+### LVMで構成された領域を拡張する方法（オンライン拡張）
+1. 物理ボリュームを拡張する  
+`$ vgresize /dev/sdb`
+1. 論理ボリュームを拡張する  
+`$ lvextend -l +100%FREE <lv name>`
+1. ファイルシステムを拡張する  
+`$ resize2fs /dev/<vg name>/<lv name>` ※ext4の場合
