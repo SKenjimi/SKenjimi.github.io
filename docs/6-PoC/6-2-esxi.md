@@ -42,4 +42,4 @@ vimの置換オプション： :%s/\<original vm name\>/\<new vm name\>/g
 
 #### Docker環境の構築
 [Dockerホストの環境構築](../3-Learned/3-1-docker/3-1-1-docker-host.md)
-
+* dockerのデータファイル格納先：
