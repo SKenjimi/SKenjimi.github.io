@@ -93,6 +93,7 @@
 `$ docker-compose up -d`  
   
 ※引用元：[install Openproject](https://www.openproject.org/docs/installation-and-operations/installation/docker/)  
+※引用元：[Github](https://github.com/opf/openproject-deploy/tree/stable/12/compose)  
 <pre>
 # .env  
 COMPOSE_TLS_VERSION=TLSv1_2  
