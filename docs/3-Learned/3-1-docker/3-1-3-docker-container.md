@@ -78,3 +78,28 @@
 ※引用元：[Taiga 30min setup](https://resources.taiga.io/30min-setup/)  
 ※引用元：[Github](https://github.com/kaleidos-ventures/taiga-docker)  
 ※引用元；[DevelopersIO](https://dev.classmethod.jp/articles/try-project-management-tool-taiga/)
+
+
+## Openproject
+### インストール
+1. リポジトリのclone  
+`$ git clone https://github.com/opf/openproject-deploy --depth=1 --branch=stable/12 openproject`  
+`$ cd openproject/compose`  
+`$ docker-compose pull`
+1. 環境変数ファイルを作成し、ポート番号などを設定する  
+`$ vi .env`  
+※例. .env
+1. dockerを起動する  
+`$ docker-compose up -d`  
+  
+※引用元：[install Openproject](https://www.openproject.org/docs/installation-and-operations/installation/docker/)  
+<pre>
+# .env  
+COMPOSE_TLS_VERSION=TLSv1_2  
+TAG=12  
+HTTPS=false  
+OPENPROJECT_HTTPS=false  
+OPENPROJECT_HOST__NAME=192.168.0.1:8080  
+OPENPROJECT_HSTS=false  
+PORT=192.168.0.1:8080  
+</pre>
