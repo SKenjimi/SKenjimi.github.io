@@ -124,7 +124,10 @@ PORT=192.168.0.1:8080
 ※baseはalpine linux, データベースはmysqlのものを採用する場合  
 `$ cp docker-compose_v3_alpine_mysql_latest.yaml docker-compose.yml`
 4. 「reservations:」オプションを削除
-5. 以降、引用元をもとに構築
+5. zabbix-agentを有効化するため「profile:」以降をコメントアウト
+6. Zabbix SNMP trapを有効化するため「profile:」以降をコメントアウト
+7. .env/env_webでPHPのタイムゾーンを変更
+8. （５．４以降の場合）Zabbux GUIにアクセスしても「Unable to determine current Zabbix database version: the table "dbversion" was not found.」が表示される場合は待つ
 
 ※引用元：[DockerでZabbix ServerとZabbix Proxyを構築してみた](https://qiita.com/ohhara_shiojiri/items/90e692c19af760ab4e53)  
 ※参考：[Zabbix公式](https://www.zabbix.com/documentation/6.0/jp/manual/installation/containers)  
