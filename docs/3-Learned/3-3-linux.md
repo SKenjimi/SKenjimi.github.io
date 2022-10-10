@@ -1,20 +1,20 @@
 # 3-3. Linux --Learned
 ## 基本設定
+### Ubuntu 22.04 LTS
+#### 共通
 * ホスト名の修正  
 file: /etc/hostname
 * hostsファイルのホスト名修正  
 file: /etc/hosts
 * IPアドレス、デフォルトゲートウェイの設定  
-/etc/netplan/***.yaml
+file: /etc/netplan/***.yaml
 * DNSの設定  
-/etc/systemd/resolved.conf
+file: /etc/systemd/resolved.conf
 自ホストのホスト名修正
 * sudoers設定  
-/etc/sudoers
+file: /etc/sudoers
 
-## 個別設定
-### Ubuntu 22.04 LTS
-#### System locate
+#### (Additional) System locate
 1. ロケールパッケージのインストール  
 `$ apt -y install language-pack-ja-base language-pack-ja`
 1. ロケール設定の一覧表示  
@@ -25,6 +25,18 @@ file: /etc/hosts
 `$ localectl set-locale LANG=ja_JP.UTF-8 LANGUAGE="ja_JP:ja"`
 1. ロケールの設定確認  
 `$ localectl`
+
+### Photon OS 4.0 rev2
+#### 共通
+* ネットワークの設定    
+file: /etc/systemd/network/10-static-eth0.network
+* ホスト名の変更  
+hostnamectl
+* タイムゾーンと時刻同期の設定  
+timedatectl
+* 各種 Linux コマンド(ツール)のインストール  
+
+※引用元；[PhotonOS 初期セットアップ](https://blog.denet.co.jp/lets-create-a-docker-and-docker-compose-env-using-photon-os/)
 
 ## その他
 ### LVMでディスク追加する方法
