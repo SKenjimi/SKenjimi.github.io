@@ -1,6 +1,6 @@
 # 3-1-1. Docker Host
 ## インストール
-### docker-ce
+### docker-ce (Ubuntu22.04)
 1. 関連パッケージのインストール  
 `$ sudo apt update`  
 `$ sudo apt-get install apt-transport-https ca-certificates curl gnupg lsb-release`
@@ -24,7 +24,7 @@
 
 ※引用元：[Ubuntu 22.04への最新版dockerのインストール](https://self-development.info/ubuntu-22-04-lts%E3%81%B8%E3%81%AE%E6%9C%80%E6%96%B0%E7%89%88docker%E3%81%AE%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB/)
 
-### docker-compose
+### docker-compose (Ubuntu22.04)
 1. docker-composeのインストール  
 `$ sudo curl -L https://github.com/docker/compose/releases/download/v2.11.0/docker-compose-linux-x86_64 -o /usr/local/bin/docker-compose`
 1. 実行権限の付与  
@@ -34,6 +34,16 @@
 
 ※引用元：[Docker Composeのインストール](https://server-network-note.net/2022/07/docker-ubuntu2204-install/)  
 ※インストール元；[Release](https://github.com/docker/compose/releases)
+
+### docker-compose (PhotonOS 4.0 rev2)
+1. docker-composeのインストール ※ディストリビューションの指定  
+`# sudo curl -L https://github.com/docker/compose/releases/download/1.26.0/docker-compose-uname -s-uname -m -o /usr/local/bin/docker-compose`
+1. 実行権限の付与  
+`# chmod +x /usr/local/bin/docker-compose`
+1. バージョンの確認  
+`# docker-compose --version`
+
+※引用元: [docker-compose の導入](https://blog.denet.co.jp/lets-create-a-docker-and-docker-compose-env-using-photon-os/)
 
 ## セットアップ
 ### Dockerのdaemon, image, state等の格納先の変更
