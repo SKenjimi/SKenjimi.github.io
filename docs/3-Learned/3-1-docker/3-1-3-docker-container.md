@@ -104,3 +104,28 @@ OPENPROJECT_HOST__NAME=192.168.0.1:8080
 OPENPROJECT_HSTS=false  
 PORT=192.168.0.1:8080  
 </pre>
+
+
+## Zabbix
+1. リポジトリのclone
+`$ git clone https://github.com/zabbix/zabbix-docker.git`
+`$ cd zabbix-docker`
+2. gitブランチの変更  
+最新のブランチになっているが、LTSの６．０に変更  
+`$ git branch`  
+`* 6.2`  
+`$ git checkout 6.0`  
+`$ git branch`  
+`* 6.0`  
+`  6.2`  
+`$ git branch --set-upstream-to=6.0`  
+`$ git pull`  
+3. docker-composeのサンプルファイルをコピーしてdocker-composeファイルを作成する  
+※baseはalpine linux, データベースはmysqlのものを採用する場合  
+`$ cp docker-compose_v3_alpine_mysql_latest.yaml docker-compose.yml`
+4. 「reservations:」オプションを削除
+5. 以降、引用元をもとに構築
+
+※引用元：[DockerでZabbix ServerとZabbix Proxyを構築してみた](https://qiita.com/ohhara_shiojiri/items/90e692c19af760ab4e53)  
+※参考：[Zabbix公式](https://www.zabbix.com/documentation/6.0/jp/manual/installation/containers)  
+※参考：[Zabbix公式Github](https://github.com/zabbix/zabbix-docker)
