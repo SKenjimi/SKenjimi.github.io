@@ -68,3 +68,15 @@
 `$ docker save 保存ファイル名 [イメージ名]`
 ###### イメージの読み込み
 `$ docker load -i ファイル`
+
+## Docker Composeの操作
+###### 複数コンテナの生成 (バックグラウンド)
+`$ docker-compose up -d`
+###### 生成するコンテナ数の指定
+`$ docker-compose scale [サービス名=数]`
+###### 複数コンテナコンテナの確認
+`$ docker-compose ps [サービス名]`
+###### 複数コンテナの起動/停止/再起動
+`$ docker-compose start/stop/restart`
+###### 複数コンテナの強制停止
+`$ docker-compose kill -s SIGNAL`
