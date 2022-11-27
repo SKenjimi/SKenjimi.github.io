@@ -173,18 +173,6 @@
     <td>セット</td>
   </tr>
   <tr>
-    <td>焚火回り</td>
-    <td>斧</td>
-    <td>1</td>
-    <td>セット</td>
-  </tr>
-  <tr>
-    <td>焚火回り</td>
-    <td>焚き火台</td>
-    <td>1</td>
-    <td>セット</td>
-  </tr>
-  <tr>
     <td>テント</td>
     <td>ふとんパッド</td>
     <td>1</td>
@@ -193,6 +181,18 @@
   <tr>
     <td>テント</td>
     <td>電灯</td>
+    <td>1</td>
+    <td>セット</td>
+  </tr>
+  <tr>
+    <td>焚火回り</td>
+    <td>斧</td>
+    <td>1</td>
+    <td>セット</td>
+  </tr>
+  <tr>
+    <td>焚火回り</td>
+    <td>焚き火台</td>
     <td>1</td>
     <td>セット</td>
   </tr>
