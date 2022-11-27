@@ -61,7 +61,7 @@
   <tr>
     <td>キッチン</td>
     <td>割り箸</td>
-    <td><br>0</br></td>
+    <td><b>0</b></td>
     <td>本</td>
     <td>△</td>
   </tr>
@@ -124,7 +124,7 @@
   <tr>
     <td>食品</td>
     <td>ティーパック</td>
-    <td><br>0</br></td>
+    <td><b>0</b></td>
     <td>パック</td>
     <td>○</td>
   </tr> 
@@ -138,14 +138,14 @@
   <tr>
     <td>焚火回り</td>
     <td>炭</td>
-    <td><br>0</br></td>
+    <td><b>0</b></td>
     <td>箱</td>
     <td>○</td>
   </tr> 
   <tr>
     <td>焚火回り</td>
     <td>薪</td>
-    <td><br>0</br></td>
+    <td><b>0</b></td>
     <td>kg</td>
     <td>○</td>
   </tr> 
@@ -155,7 +155,7 @@
 ## 必需品リスト
 <table>
   <tr>
-    <th>カテゴリ/th>
+    <th>カテゴリ</th>
     <th>品目</th>
     <th>数量</th>
     <th>単位</th>
