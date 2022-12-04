@@ -107,9 +107,10 @@ PORT=192.168.0.1:8080
 
 
 ## Zabbix
-1. リポジトリのclone
-`$ git clone https://github.com/zabbix/zabbix-docker.git`
-`$ cd zabbix-docker`
+### インストール
+1. リポジトリのclone  
+`$ git clone https://github.com/zabbix/zabbix-docker.git`  
+`$ cd zabbix-docker`  
 2. gitブランチの変更  
 最新のブランチになっているが、LTSの６．０に変更  
 `$ git branch`  
@@ -119,7 +120,8 @@ PORT=192.168.0.1:8080
 `* 6.0`  
 `  6.2`  
 `$ git branch --set-upstream-to=6.0`  
-`$ git pull`  
+`$ git pull`
+
 3. docker-composeのサンプルファイルをコピーしてdocker-composeファイルを作成する  
 ※baseはalpine linux, データベースはmysqlのものを採用する場合  
 `$ cp docker-compose_v3_alpine_mysql_latest.yaml docker-compose.yml`
@@ -137,3 +139,26 @@ PORT=192.168.0.1:8080
 ※参考：[Zabbix公式](https://www.zabbix.com/documentation/6.0/jp/manual/installation/containers)  
 ※参考：[Zabbix公式Github](https://github.com/zabbix/zabbix-docker)  
 ※参考：[Zabbix: Unable to determine "dbversion"](https://stackoverflow.com/questions/70220815/zabbix-unable-to-determine-dbversion)
+
+### コンテナホストのzabbix-agent有効
+1. Web UIの「ホスト」でデフォルトで作成されている「Zabbix Server」を選択
+2. 以下の情報に更新
+* ホスト名： zabbix-server
+* 表示名： Zabbix Server
+* インターフェース DNS名： zabbix-agent (接続方法：DNS)
+
+### 取得データの日本語文字化けの修正
+1. dockerにシェル接続  
+`$ docker exec -it zabbix-docker-zabbix-web-nginx-pgsql-1 /bin/bash`  
+2. パッケージを更新  
+`# apk update && apk upgrade`
+4. 日本語のフォントをインストール  
+`# apk add font-noto font-noto-cjk`
+5. フォント情報の更新  
+`# fc-cache -fv`
+6. 既存の文字フォントデータをバックアップ  
+`# mv /usr/share/zabbix/assets/fonts/DejaVuSans.ttf /usr/share/zabbix/assets/fonts/DejaVuSans.ttf.bak`
+7. シンボリックリンクの割当  
+`# ln -s /usr/share/fonts/noto/NotoSansCJK-Regular.ttc /usr/share/zabbix/assets/fonts/DejaVuSans.ttf`
+
+※参考:[Zabbix Dockerコンテナのフロントエンドでの修正方法](https://qiita.com/ohhara_shiojiri/items/acf995bb70f64ec757f9)
