@@ -4,3 +4,4 @@
 ## [3-3 Linux](3-Learned/3-3-linux.md)
 ## [3-4 Project Managemt](3-Learned/3-4-projectmanagement.md)
 ## [3-5 Readable Code](3-Learned/3-5-readablecode.md)
+## [3-6 Azure](3-Learned/3-6-Azure.md)
