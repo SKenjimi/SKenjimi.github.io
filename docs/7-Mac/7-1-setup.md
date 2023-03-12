@@ -16,3 +16,6 @@
 
 ## Docker Desktop
 [インストール](https://matsuand.github.io/docs.docker.jp.onthefly/desktop/mac/install/)
+
+## Azure CLI
+[インストール](https://learn.microsoft.com/ja-jp/cli/azure/install-azure-cli-macos)
